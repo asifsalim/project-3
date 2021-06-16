@@ -1,0 +1,38 @@
+.header-primary{
+    font-weight: 600;
+    line-height: 2.3rem;
+    font-size: 2rem;
+}
+
+.header-grey-color{
+    color: rgba($color-box-dark-grey-2,.9);
+
+}
+
+.paragraph-style{
+    font-size: 1.4rem;
+    color: rgba($color-box-white,.5);
+    line-height: 2rem;
+
+    &__grey{
+        color: rgba($color-box-dark-grey-2,0.7);
+    }
+}
+
+.Grey-header{
+    color: $color-box-dark-grey-2;
+    font-weight: 500;
+    font-size: 1.4rem;
+
+}
+
+.white-header{
+    color: $color-box-white;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.Grey-subheader{
+    color: rgba($color-box-dark-grey-2,.7);
+    font-weight: 600;
+}

@@ -14,104 +14,151 @@ html {
 }
 
 body {
+  height: 100vh;
+  width: 100%;
   background-color: #ecf2f8;
   font-family: 'Barlow Semi Condensed', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.container__items {
+.header-primary {
+  font-weight: 600;
+  line-height: 2.3rem;
+  font-size: 2rem;
+}
+
+.header-grey-color {
+  color: rgba(73, 80, 87, 0.9);
+}
+
+.paragraph-style {
+  font-size: 1.4rem;
+  color: rgba(233, 236, 239, 0.5);
+  line-height: 2rem;
+}
+
+.paragraph-style__grey {
+  color: rgba(73, 80, 87, 0.7);
+}
+
+.Grey-header {
+  color: #495057;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.white-header {
+  color: #e9ecef;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.Grey-subheader {
+  color: rgba(73, 80, 87, 0.7);
+  font-weight: 600;
+}
+
+.purple-img-border {
+  border: 2px solid #a28ad2;
+}
+
+.dark-purple-border {
+  border: 2px solid #7b2cbf;
+}
+
+.container {
+  height: auto;
+  max-width: 120rem;
+  background-color: orangered;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr (1fr)[4] 1fr;
-      grid-template-columns: 1fr repeat(4, 1fr) 1fr;
-  -ms-grid-rows: (1fr)[4];
-      grid-template-rows: repeat(4, 1fr);
-  grid-gap: 4rem;
+  -ms-grid-columns: (minmax(24rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  -ms-grid-rows: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-rows: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-auto-rows: 30rem;
+  grid-gap: 2rem;
 }
 
-.container__items > * {
-  padding: 4rem 6rem;
+.container > * {
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+}
+
+.container--top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem 0;
 }
 
-.container__items--top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.container--middle {
+  font-weight: 600;
+  line-height: 2.3rem;
+  font-size: 2rem;
+  padding: 1.5rem 0;
 }
 
-.container__items--imgbox__img {
-  height: 4rem;
-  width: 4rem;
+.container--imgbox__img {
+  height: 3.5rem;
+  width: 3.5rem;
   border-radius: 100px;
-  border: 2px solid #fffafa;
 }
 
-.container__items--textbox {
+.container--textbox {
   margin-left: 1rem;
 }
 
-.container__items--status {
-  color: rgba(255, 250, 250, 0.5);
+.container--header {
+  font-weight: 300;
 }
 
-.container__items--box-1 {
+.container--status {
+  color: rgba(233, 236, 239, 0.5);
+}
+
+.container--box-1 {
   background-color: #7b2cbf;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2 / 3;
-  -ms-grid-column: 2;
+  -ms-grid-column: 1;
   -ms-grid-column-span: 2;
-  grid-column: 2 / 4;
-  color: #fffafa;
+  grid-column: 1 / span 2;
+  color: #e9ecef;
 }
 
-.container__items--box-2 {
+.container--box-2 {
   background-color: #48556a;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2 / 3;
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 1;
-  grid-column: 4 / 5;
-  color: #fffafa;
+  color: #e9ecef;
 }
 
-.container__items--box-3 {
-  background-color: #fffafa;
-  -ms-grid-row: 2;
+.container--box-3 {
+  background-color: #f8f9fa;
+  -ms-grid-row: 1;
   -ms-grid-row-span: 2;
-  grid-row: 2 /span 2;
-  -ms-grid-column: 5;
-  -ms-grid-column-span: 1;
-  grid-column: 5 / 6;
+  grid-row: 1 / span 2;
+  grid-column: 4 / -1;
 }
 
-.container__items--box-4 {
-  background-color: #fffafa;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3 / 4;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2 / 3;
+.container--box-4 {
+  background-color: #f8f9fa;
 }
 
-.container__items--box-5 {
+.container--box-5 {
   background-color: #19212e;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3 / 4;
-  -ms-grid-column: 3;
+  color: #e9ecef;
+  -ms-grid-column: 2;
   -ms-grid-column-span: 2;
-  grid-column: 3 /span 2;
-  color: #fffafa;
+  grid-column: 2 / span 2;
 }

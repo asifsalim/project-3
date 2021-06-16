@@ -1,53 +1,58 @@
 .container{
-
-
-
-
-
-    &__items{
-
+        height: auto;
+        max-width: 120rem;
+        background-color: orangered;
         display: grid;
-        grid-template-columns:1fr repeat(4 , 1fr) 1fr;
-        grid-template-rows: repeat(4 , 1fr);
-        grid-gap: 4rem;
+        grid-template-columns: repeat(auto-fit,minmax(24rem,1fr));
+        grid-template-rows: repeat(auto-fit,minmax(30rem,1fr));
+        grid-auto-rows: 30rem;
+        grid-gap: 2rem;
+
+
+
+
+
+
 
         & > * {
-            padding: 4rem 6rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            padding: 1rem 3rem;
+            border-radius: 1rem;
+
 
         }
 
         &--top{
             display: flex;
+            align-items: center;
+            padding: 1.5rem 0;
+
         }
 
         &--middle{
-
+            font-weight: 600;
+            line-height: 2.3rem;
+            font-size: 2rem;
+            padding: 1.5rem 0;
         }
 
-        &--end{
-
-        }
 
         &--imgbox{
 
 
             &__img{
-                height: 4rem;
-                width: 4rem;
+                height: 3.5rem;
+                width: 3.5rem;
                 border-radius: 100px;
-                border: 2px solid $color-box-white;
             }
         }
 
         &--textbox{
             margin-left: 1rem;
+
         }
 
         &--header{
-
+            font-weight: 300;
         }
 
         &--status{
@@ -56,8 +61,7 @@
 
         &--box-1{
             background-color: $color-box-1;
-            grid-row: 2 / 3;
-            grid-column: 2 / 4;
+            grid-column: 1 / span 2;
             color: $color-box-white;
 
 
@@ -66,31 +70,30 @@
 
         &--box-2{
             background-color: $color-box-2;
-            grid-row: 2 / 3;
-            grid-column: 4 / 5;
+
             color: $color-box-white;
         }
 
         &--box-3{
-            background-color:$color-box-white;
-            grid-row: 2 /span 2;
-            grid-column: 5 / 6
+            background-color:$color-box-light-white;
+            grid-row: 1 / span 2;
+            grid-column: 4 / -1;
+
+
         }
 
         &--box-4{
-            background-color: $color-box-white;
-            grid-row: 3 / 4;
-            grid-column: 2 / 3;
+            background-color: $color-box-light-white;
+
         }
 
         &--box-5{
             background-color: $color-box-5;
-            grid-row: 3 / 4;
-            grid-column: 3 /span 2;
             color: $color-box-white;
+            grid-column: 2 / span 2;
         }
 
 
-    }
+
 }
 
