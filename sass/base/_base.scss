@@ -8,7 +8,32 @@
 
 html{
    font-size: 62.5%;
+
    box-sizing: border-box;
+
+   @include response (XLarge-screen){
+      font-size: 150%;
+   }
+
+   @include response (Large-screen){
+      font-size: 95%;
+   }
+
+   @include response (Laptop-large){
+      // font-size: 62.5%;
+   }
+
+   @include response (Laptop-small){
+      font-size: 50%;
+   }
+
+   @include response (Tablet){
+      font-size: 40%;
+   }
+
+   @include response (Mobile-Large){
+      font-size: 30%;
+   }
 }
 
 body{
@@ -21,7 +46,8 @@ body{
    // align-items: center;
    display: flex;
    justify-content: center;
-   align-content: center;
    align-items: center;
+
+
 
 }
