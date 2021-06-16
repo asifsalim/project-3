@@ -91,8 +91,22 @@
             background-color: $color-box-1;
             grid-column: 1 / span 2;
             color: $color-box-white;
+            position: relative;
             @include response (Mobile-Large){
                 grid-area: box1;
+
+            }
+
+            &::before{
+                content:"\201C";
+                font-size: 50rem;
+                color: rgba($color-body,.4);
+                line-height: 1;
+                position: absolute;
+                top: -5.75rem;
+                right: 8.75rem;
+                font-family: sans-serif;
+
 
             }
 
