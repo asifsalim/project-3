@@ -1,7 +1,6 @@
 .container{
         height: auto;
         max-width: 120rem;
-        // background-color: orangered;
         display: grid;
         grid-template-columns: repeat(auto-fit,minmax(24rem,1fr));
         grid-template-rows: repeat(auto-fit,minmax(30rem,1fr));
@@ -27,7 +26,7 @@
                                   "box4"
                                   "box5";
 
-            height: 100vh;
+            height: 100%;
             max-width: 50rem;
             padding: 5rem;
 
@@ -35,7 +34,8 @@
 
         @include response (Mobile-Small){
             min-width: 100%;
-            margin-bottom: 5rem;
+           
+
         }
 
 
