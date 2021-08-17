@@ -44,8 +44,7 @@ html {
 }
 
 body {
-  height: 100vh;
-  width: 100%;
+  min-height: 100vh;
   background-color: #ecf2f8;
   font-family: 'Barlow Semi Condensed', sans-serif;
   display: -webkit-box;

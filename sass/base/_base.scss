@@ -37,13 +37,9 @@ html{
 }
 
 body{
-   height: 100vh;
-   width: 100%;
+   min-height: 100vh;
    background-color: $color-body;
    font-family: 'Barlow Semi Condensed', sans-serif;
-   // display: flex;
-   // justify-content: center;
-   // align-items: center;
    display: flex;
    justify-content: center;
    align-items: center;
